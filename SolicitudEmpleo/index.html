@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud Empleo</title>
+</head>
+<body>
+    <h1><center>Salinas Padilla Abigail Berenice
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        4BM1</center></h1>
+    <form name="SolicitudEmpleo" id="idDatos" method="post">
+        <table border="1">
+            <tr>
+                <td width="600" colspan="2">
+                    <label>Solicitud Empleo</label>
+                    <p>Puesto que solicita</p>
+                    <p><input type="text" name="PuestoS" id="idPuesto" maxlength="50" /></p>
+                    <p>
+                        <center>Sea tan amable de llenar esta solicitud en forma manuscrita</center>
+                    </p>
+                    <p>
+                        <center>NOTA: Toda informacion aqui proporcionada sera tratada</center>
+                    </p>
+                    <p>
+                        <center>confidencialmente</center>
+                    </p>
+                </td>
+                <td width="300">
+                    <label>Fecha</label>
+                    <p><input type="date" name="Fecha" id="idFecha" /></p>
+                    <p><label>Sueldo Mensual deseado</label></p>
+                    <p><input type="number" name="Sueldo" id="idSueldo" /></p>
+                    <p><label>Sueldo Mensual Aprovado</label></p>
+                    <p><input type="number" name="SueldoAprovado" id="idSAprovado" /></p>
+                    <p><label>Fecha de Contratacion</label></p>
+                    <p><input type="date" name="FechaContratacion" id="idFContratacion" /></p>
+                </td>
+                <td width="300">
+                    <p>
+                        <center>Pegue foto</center>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <h3><label>
+                            <center>Datos Personales</center>
+                        </label></h3>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Apellido Paterno</label>
+                    <p><input type="text" /></p>
+                </td>
+                <td><label>Apellido Materno</label>
+                    <p><input type="text" /></p>
+                </td>
+                <td><label>Nombre(s)</label>
+                    <p><input type="text" /></p>
+                </td>
+                <td><label>Edad</label>
+                    <p><input type="number" /></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Domicilio</label>
+                    <p><input type="text" /></p>
+                </td>
+                <td>
+                    <label>Colonia</label>
+                    <p><input type="text" /></p>
+                </td>
+                <td>
+                    <label>Codigo Postal</label>
+                    <p><input type="text" /></p>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Telefono</label>
+                                <p><input type="number" /></p>
+                            </td>
+                            <td>
+                                <label>Sexo</label>
+                                <p><input type="checkbox" id="idMasculino" /><label for="idMasculino">Masculino</label>
+                                </p>
+                                <p><input type="checkbox" id="idFemenino" /><label for="idFemenino">Femenino</label></p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Ciudad, Estado</label>
+                    <p><select value="txtLugar">
+                            <option value="selecciona" id="idSeleciona">Selecciona</option>
+                            <option value="edomex" id="idEdoMex">Estado de Mexico</option>
+                            <option value="cdmx" id="idCdmx">Ciuidad de Mexico</option>
+                            <option value="mont" id="idMont">Monterrey</option>
+                        </select></p>
+                </td>
+                <td colspan="2">
+                    <label>Lugar de Nacimiento</label>
+                    <p><input type="text" /></p>
+                </td>
+                <td rowspan="2">
+                    <label>Fecha de Nacimiento</label>
+                    <label>Nacionalidad</label>
+                    <input type="date" id="idFNacimiento" />
+                    <input type="text" id="idNacionalidad" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <label>Vive con sus padres</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="checkbox" name="vivir" id="idSusPadres" />
+                    <label for="idSusPadres">Sus padres</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="checkbox" name="vivir" id="idSuFamilia" />
+                    <label for="idSuFamilia">Su familia</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="checkbox" name="vivir" id="idParientes" />
+                    <label for="idParientes">Parientes</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="checkbox" name="vivir" id="idSolo" />
+                    <label for="idSolo">Solo</label>
+                </td>
+                <td>
+                    <label>Estatura</label>
+                    <input type="number" id="idEstatura" style="width: 50px" />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>Peso</label>
+                    <input type="number" id="idPeso" style="width: 50px" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <label>Personas que dependen de usted</label>
+                </td>
+                <td rowspan="2">
+                    <label>Estado civil</label>
+                    <p>
+                        <input type="checkbox" name="estcivil" id="idSoltero" />
+                        <label for="idSoltero">Soltero</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="estcivil" id="idCasado" />
+                        <label for="idCasado">Casado</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="estcivil" id="idOtro2" />
+                        <label for="idOtro2">Otro</label>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="checkbox" name="depender" id="idHijos" />
+                    <label for="idHijos">Hijos</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="checkbox" name="depender" id="idConyuge" />
+                    <label for="idConyuge">Conyuge</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;
+                    <input type="checkbox" name="depender" id="idPadre" />
+                    <label for="idPadres">Padres</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;
+                    <input type="checkbox" name="depender" id="idOtros" />
+                    <label for="idOtros">Otros</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <h3><label>
+                            <center>Documentacion</center>
+                        </label></h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Clave unica de registro de Poblacion</label>
+                    <p><input type="text" name="Clave" id="idClave" maxlength="50" /></p>
+                </td>
+                <td colspan="2">
+                    <label>Afore</label>
+                    <p><input type="text" name="Afore" id="idAfore" /></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Reg.Fed. De Contribuyentes</label>
+                    <p><input type="text" name="Contribuyente" id="idContribuyentes" /></p>
+                </td>
+                <td>
+                    <label>Numero de Seguridad Social</label>
+                    <p><input type="text" name="SS" id="idSS" /></p>
+                </td>
+                <td>
+                    <label>Cartilla de Servicio Militar No.</label>
+                    <p><input type="number" name="ServicioMil" id="idSerMilitar" /></p>
+                </td>
+                <td>
+                    <label>Pasaporte No.</label>
+                    <p><input type="number" name="Pasaporte" id="idPasaporte" /></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Tiene Licencia de Manejo</label>
+                    <p>
+                        <input type="checkbox" name="checkLicencia" id="idNo" />
+                        <label for="idNo">No</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="checkLicencia" id="idSi" />
+                        <label for="idSi">Si</label>
+                    </p>
+                </td>
+                <td>
+                    <label>Clase y Numero de Licencia</label>
+                    <p><input type="text" name="NLicencia" id="idDatosLicencia" /></p>
+                </td>
+                <td colspan="2">
+                    <label>Siendo extranjero que documentos</label>
+                    <p>
+                        <label>le permiten entrar al pais</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;
+                        <input type="text" name="Documentos" id="idDocumentos" />
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <table width="1222" border="1">
+            <tr>
+                <td colspan="3">
+                    <h3><label>
+                            <center>Estado de Salud y Habitos Personales</center>
+                        </label></h3>
+                </td>
+            </tr>
+            <tr>
+                <td width="450">
+                    <label>¿Como considera su estado de salud actual?</label>
+                    <p>
+                        <input type="checkbox" name="checkSalud" id="idBueno" />
+                        <label for="idBueno">Bueno</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="checkSalud" id="idRegular" />
+                        <label for="idRegular">Regular</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="checkSalud" id="idMalo" />
+                        <label for="idMalo">Malo</label>
+                    </p>
+                </td>
+                <td colspan="2">
+                    <label>¿Padece alguna enfermedad cronica?</label>
+                    <p>
+                        <input type="checkbox" name="checkEnfermedad" id="idNo2" />
+                        <label for="idNo2">No</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="checkEnfermedad" id="idSi2" />
+                        <label for="idSi2">Si (Explique)</label>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>¿Practica usted algun deporte?</label>
+                    <p><input type="text" id="idDeporte" /></p>
+                </td>
+                <td>
+                    <label>¿Pertenece a algun Club Social o Deportivo?</label>
+                    <p><input type="text" id="idClub" /></p>
+                </td>
+                <td>
+                    <label>¿Cual es su pasatiempo favorito?</label>
+                    <p><input type="text" id="idPasatiempo" /></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <label>¿Cual es su meta en la vida?</label>
+                    <p><input type="text" id="idMeta" /></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h3><label>
+                            <center>Datos Familiares</center>
+                        </label></h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <label>Nombre</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>Vive</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>Fin</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>Domicilio</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>Ocupacion</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <label>Padre</label>
+                    <p>
+                        <input type="text" id="idPadre" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idVive1" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idFin1" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;
+                        <input type="text" id="idDomicilio1" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;
+                        <input type="text" id="idOcupacion1" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <label>Madre</label>
+                    <p>
+                        <input type="text" id="idMadre" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idVive2" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idFin2" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;
+                        <input type="text" id="idDomicilio2" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;
+                        <input type="text" id="idOcupacion2" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <label>Esposa (a)</label>
+                    <p>
+                        <input type="text" id="idEsposa" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idVive3" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idFin3" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;
+                        <input type="text" id="idDomicilio3" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;
+                        <input type="text" id="idOcupacion3" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <label>Nombre y edades de los hijos</label>
+                    <p>
+                        <input type="text" id="idHijos" style="width: 1100px" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h3><label>
+                            <center>Escolaridad</center>
+                        </label></h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <label>Nombre</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>Direccion</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>De</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>A</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>Años</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>Titulo recibido</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <label>Primaria</label>
+                    <p>
+                        <input type="text" id="idPrimaria" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idDireccion1" style="width: 250px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idDe1" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idA1" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idAnos1" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idTitulo1" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <label>Secundaria o Prevocaciones</label>
+                    <p>
+                        <input type="text" id="idSecundara" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idDireccion2" style="width: 250px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idDe2" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idA2" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idAnos2" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idTitulo2" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <label>Preparatoria o vocacional</label>
+                    <p>
+                        <input type="text" id="idPrepa" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idDireccion3" style="width: 250px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idDe3" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idA3" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idAnos3" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idTitulo3" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <label>Profesional</label>
+                    <p>
+                        <input type="text" id="idProfesional" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idDireccion4" style="width: 250px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idDe4" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idA4" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idAnos4" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idTitulo4" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <label>Comercial u otras</label>
+                    <p>
+                        <input type="text" id="idOtras" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idDireccion5" style="width: 250px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idDe5" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idA5" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idAnos5" style="width: 50px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idTitulo5" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <label>Estudios que esta efectuando en la actualidad</label>
+                    <p>
+                        <label>Escuela</label>
+                        <input type="text" id="idActEscuela" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <label>Horario</label>
+                        <input type="time" id="idActHorario" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <label>Curso o Carrera</label>
+                        <input type="text" id="idActCarrera" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <label>Grado</label>
+                        <input type="number" id="idActGrado" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+        <table width="1222" border="1">
+            <tr>
+                <td width="1222" colspan="4">
+                    <h3><label><center>Conocimientos generales</center></label></h3>
+                </td>
+            </tr>
+            <tr>
+                <td width="611" colspan="2">
+                    <label>Que idiomas habla</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>(Nivel 50%, 75%, 100%)</label>
+                    <p>
+                        <input type="text" id="idIdiomas" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;
+                        <select name="porcentaje" id="idselectPorcentaje">
+                            <option name="50P" id="id50P">50%</option>
+                            <option name="75P" id="id75P">75%</option>
+                            <option name="100P" id="id100P">100%</option>
+                        </select>
+                    </p>
+                </td>
+                <td width="611" colspan="2">
+                    <label>Funciones de oficina que domina</label>
+                    <p>
+                        <input type="text" id="idOficina" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="611" colspan="2">
+                    <label>Maquina de Oficina o taller que sepa manejar</label>
+                    <p>
+                        <input type="text" id="idMaquinaria" />
+                    </p>
+                </td>
+                <td width="611" colspan="2">
+                    <label>Software que conoce</label>
+                    <p>
+                        <input type="text" id="idSoftware" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="1222" colspan="4">
+                    <label>Otros trabajos o funciones que domina</label>
+                    <p>
+                        <input type="text" id="idOtrosTrabajos" size="150" />
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+        <table width="1222" border="1">
+            <tr>
+                <td width="1222" colspan="5">
+                    <h3><label>
+                            <center>Empleo actual y anteriores</center>
+                        </label></h3>
+                </td>
+            </tr>
+            <tr>
+                <td width="246">
+                    <label>Concepto</label>
+                </td>
+                <td width="244">
+                    <label>Actual o ultimo</label>
+                </td>
+                <td width="244">
+                    <label>Anterior</label>
+                </td>
+                <td width="244">
+                    <label>Anterior</label>
+                </td>
+                <td width="244">
+                    <label>Anterior</label>
+                </td>
+            </tr>
+            <tr>
+                <td width="246">
+                    <label>Tiempo que presto</label>
+                    <p><label>sus servicios</label></p>
+                </td>
+                <td width="244">
+                    <label>de</label>
+                    <input type="number" id="idDe1" style="width: 50px" />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>a</label>
+                    <input type="number" id="idA1" style="width: 50px" />
+                </td>
+                <td width="244">
+                    <label>de</label>
+                    <input type="number" id="idDe2" style="width: 50px" />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>a</label>
+                    <input type="number" id="idA2" style="width: 50px" />
+                </td>
+                <td width="244">
+                    <label>de</label>
+                    <input type="number" id="idDe3" style="width: 50px" />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>a</label>
+                    <input type="number" id="idA3" style="width: 50px" />
+                </td>
+                <td width="244">
+                    <label>de</label>
+                    <input type="number" id="idDe4" style="width: 50px" />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>a</label>
+                    <input type="number" id="idA4" style="width: 50px" />
+                </td>
+            </tr>
+            <tr>
+                <td width="246">
+                    <label>Nombre de la</label>
+                    <p><label>Compañia</label></p>
+                </td>
+                <td width="244">
+                    <input type="text" id="idCompania1" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idCompania2" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idCompania3" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idCompania4" />
+                </td>
+            </tr>
+            <tr>
+                <td width="246" height="50">
+                    <label>Direccion</label>
+                </td>
+                <td width="244">
+                    <input type="text" id="idDireccion1" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idDireccion2" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idDireccion3" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idDireccion4" />
+                </td>
+            </tr>
+            <tr>
+                <td width="246" height="50">
+                    <label>Telefono</label>
+                    <p></p>
+                </td>
+                <td width="244">
+                    <input type="number" id="idTelefono1" />
+                </td>
+                <td width="244">
+                    <input type="number" id="idTelefono2" />
+                </td>
+                <td width="244">
+                    <input type="number" id="idTelefono3" />
+                </td>
+                <td width="244">
+                    <input type="number" id="idTelefono4" />
+                </td>
+            </tr>
+            <tr>
+                <td width="246">
+                    <label>Puesto</label>
+                    <p><label>desempeñado</label></p>
+                </td>
+                <td width="244">
+                    <input type="text" id="idPuesto1" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idPuesto2" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idPuesto3" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idPuesto4" />
+                </td>
+            </tr>
+            <tr>
+                <td width="246" height="50">
+                    <label>Sueldos final:</label>
+                </td>
+                <td width="244">
+                    <label>Inicial</label>
+                    <input type="number" id="idSueldoI1" style="width: 50px" />
+                    &nbsp; &nbsp; &nbsp;
+                    <label>Final</label>
+                    <input type="number" id="idSueldoF1" style="width: 50px" />
+                </td>
+                <td width="244">
+                    <input type="number" id="idSueldoI2" style="width: 50px" />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="number" id="idSueldoF2" style="width: 50px" />
+                </td>
+                <td width="244">
+                    <input type="number" id="idSueldoI3" style="width: 50px" />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="number" id="idSueldoF3" style="width: 50px" />
+                </td>
+                <td width="244">
+                    <input type="number" id="idSueldoI4" style="width: 50px" />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="number" id="idSueldoF4" style="width: 50px" />
+                </td>
+            </tr>
+            <tr>
+                <td width="246">
+                    <label>Motivo de</label>
+                    <p><label>separacion</label></p>
+                </td>
+                <td width="244">
+                    <input type="text" id="idSeparacion1" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idSeparacion2" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idSeparacion3" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idSeparacion4" />
+                </td>
+            </tr>
+            <tr>
+                <td width="246">
+                    <label>Nombre de su jefe</label>
+                    <p><label>directo</label></p>
+                </td>
+                <td width="244">
+                    <input type="text" id="idJefe1" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idJefe2" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idJefe3" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idJefe4" />
+                </td>
+            </tr>
+            <tr>
+                <td width="246">
+                    <label>Puesto de su jefe</label>
+                    <p><label>directo</label></p>
+                </td>
+                <td width="244">
+                    <input type="text" id="idPuestoJ1" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idPuestoJ2" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idPuestoJ3" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idPuestoJ4" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Podemos solicitar</label>
+                    <p><label>informes de usted</label></p>
+                    <p>
+                        <input type="checkbox" name="informesJefe" id="idSiInformes" />
+                        <label for="idSiInformes">Si</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="informesJefe" id="idNoInformes" />
+                        <label for="idNoInformes">No</label>
+                    </p>
+                </td>
+                <td colspan="4">
+                    <label>Comentarios de sus jefes:</label>
+                    <p><input type="text" id="idComentariosJefes" size="120" /></p>
+                </td>
+            </tr>
+            <tr>
+                <td width="1222" colspan="5">
+                    <h3><label>
+                            <center>Referencias personales (favor de no incluir a jefes anteriores)</center>
+                        </label></h3>
+                </td>
+            </tr>
+            <tr>
+                <td width="246">
+                    <label>Nombre</label>
+                </td>
+                <td width="244">
+                    <label>Domicilio</label>
+                </td>
+                <td width="244">
+                    <label>Telefono</label>
+                </td>
+                <td width="244">
+                    <label>Ocupacion</label>
+                </td>
+                <td width="244">
+                    <label>Tiempo de conocerlo</label>
+                </td>
+            </tr>
+            <tr>
+                <td width="246">
+                    <input type="text" id="idNombreConocido1" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idDomicilioConocido1" />
+                </td>
+                <td width="244">
+                    <input type="number" id="idTelefonoConocido1" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idOcupacionConocido1" />
+                </td>
+                <td width="244">
+                    <input type="number" id="idTiempoConocido1" />
+                </td>
+            </tr>
+            <tr>
+                <td width="246">
+                    <input type="text" id="idNombreConocido2" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idDomicilioConocido2" />
+                </td>
+                <td width="244">
+                    <input type="number" id="idTelefonoConocido2" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idOcupacionConocido2" />
+                </td>
+                <td width="244">
+                    <input type="number" id="idTiempoConocido2" />
+                </td>
+            </tr>
+            <tr>
+                <td width="246">
+                    <input type="text" id="idNombreConocido3" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idDomicilioConocido3" />
+                </td>
+                <td width="244">
+                    <input type="number" id="idTelefonoConocido3" />
+                </td>
+                <td width="244">
+                    <input type="text" id="idOcupacionConocido3" />
+                </td>
+                <td width="244">
+                    <input type="number" id="idTiempoConocido3" />
+                </td>
+            </tr>
+            <tr>
+                <td width="1222" colspan="5">
+                    <h3><label>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp;
+                            Datos generales</label>
+                        <label>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            Datos economicos</label>
+                    </h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>¿Como supo de este empleo?</label>
+                    <p>
+                        <input type="checkbox" name="comoSupo" id="idAnuncio" />
+                        <label for="idAnuncio">Anuncio</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="comoSupo" id="idOtroMedio" />
+                        <label for="idOtroMedio">Otro Medio (anotelo)</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idMedio" size="15" />
+                    </p>
+                </td>
+                <td colspan="3">
+                    <label>¿Tiene usted otros ingresos?</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>Importe mensual</label>
+                    <p>
+                        <input type="checkbox" name="checkIngresos" id="idNoIngresos" />
+                        <label for="idNoIngresos">No</label>
+                        &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="checkIngresos" id="idSiIngresos" />
+                        <label for="idSiIngresos">Si (describalos)</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idDescribaIngreso" style="width: 150px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp;
+                        <input type="number" id="idIngresoNum" style="width: 150px" placeholder="$" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>¿Tiene parientes trabajando en esta empresa?</label>
+                    <p>
+                        <input type="checkbox" name="tieneParientes" id="idNoParientes" />
+                        <label for="idNoParientes">No</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="tieneParientes" id="idSiParientes" />
+                        <label for="idSiParientes">Si (nombrelos)</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idNombrelos" size="15" />
+                    </p>
+                </td>
+                <td colspan="3">
+                    <label>¿Su conyugue trabaja?</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>Percepcion mensual</label>
+                    <p>
+                        <input type="checkbox" name="checkConyuge" id="idNoConyuge" />
+                        <label for="idNoConyuge">No</label>
+                        &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="checkConyuge" id="idSiConyuge" />
+                        <label for="idSiConyuge">Si (¿donde?)</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idDonde" style="width: 150px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp;
+                        <input type="number" id="idPercepcion" style="width: 150px" placeholder="$" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>¿Ha estado afianzado?</label>
+                    <p>
+                        <input type="checkbox" name="Afianzado" id="idNoAfianzado" />
+                        <label for="idNoAfianzado">No</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="Afianzado" id="idSiAfianzado" />
+                        <label for="idSiAfianzado">Si (nombre de la CIA)</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idCIA" size="15" />
+                    </p>
+                </td>
+                <td colspan="3">
+                    <label>¿Vive en casa propia?</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>Valor aproximado</label>
+                    <p>
+                        <input type="checkbox" name="checkCasa" id="idNoCasa" />
+                        <label for="idNoConyuge">No</label>
+                        &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="checkCasa" id="idSiCasa" />
+                        <label for="idSiCasa">Si </label>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp;
+                        <input type="number" id="idValor" style="width: 150px" placeholder="$" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>¿Ha estado afiliado a algun sindicato?</label>
+                    <p>
+                        <input type="checkbox" name="Sindicato" id="idNoSindicato" />
+                        <label for="idNoSindicato">No</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="Sindicato" id="idSiSindicato" />
+                        <label for="idSiSindicato">Si (¿a Cual?)</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idSindicato" size="15" />
+                    </p>
+                </td>
+                <td colspan="3">
+                    <label>¿Paga renta?</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>Renta mensual</label>
+                    <p>
+                        <input type="checkbox" name="checkRenta" id="idNoRenta" />
+                        <label for="idNoRenta">No</label>
+                        &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="checkRenta" id="idSiRenta" />
+                        <label for="idSiRenta">Si </label>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp;
+                        <input type="number" id="idRenta" style="width: 150px" placeholder="$" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>¿Tiene seguro de vida?</label>
+                    <p>
+                        <input type="checkbox" name="SVida" id="idNoVida" />
+                        <label for="idNoVida">No</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="SVida" id="idSiVida" />
+                        <label for="idSiSindicato">Si (nombre de la CIA)</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idVida" size="15" />
+                    </p>
+                </td>
+                <td colspan="3">
+                    <label>¿Tiene automovil propio?</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;
+                    <label>Marca</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>Modelo</label>
+                    <p>
+                        <input type="checkbox" name="checkVida" id="idNoSVida" />
+                        <label for="idNoSVida">No</label>
+                        &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="checkVida" id="idSiSVida" />
+                        <label for="idSiSVida">Si </label>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idMarca" style="width: 150px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp;
+                        <input type="text" id="idModelo" style="width: 150px" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>¿Puede viajar?</label>
+                    <p>
+                        <input type="checkbox" name="puedeViajar" id="idSiViajar" />
+                        <label for="idSiViajar">Si</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="puedeViajar" id="idNoViajar" />
+                        <label for="idNoViajar">No (razones)</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idRazones" size="15" />
+                    </p>
+                </td>
+                <td colspan="3">
+                    <label>¿Tiene deudas?</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label>Importe</label>
+                    <p>
+                        <input type="checkbox" name="checkDedudas" id="idNoDeudas" />
+                        <label for="idNoDeudas">No</label>
+                        &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="checkDeudas" id="idSiDeudas" />
+                        <label for="idSiDeudas">Si (¿con quien?)</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idConquien" style="width: 150px" />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp;
+                        <input type="number" id="idDeudas" style="width: 150px" placeholder="$" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>¿Esta dispuesto a cambiar de residencia?</label>
+                    <p>
+                        <input type="checkbox" name="cambiarResidencia" id="idSiResidencia" />
+                        <label for="idSiResidencia">Si</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="checkbox" name="cambiarResidencia" id="idNoResidencia" />
+                        <label for="idNoResidencia">No (razones)</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="idRazonesResidencia" size="15" />
+                    </p>
+                </td>
+                <td colspan="3">
+                    <label>¿Cuanto abona mensualmente?</label>
+                    <p>
+                        <input type="number" id="idDeudas" style="width: 650px" placeholder="$" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Fecha en que podria presentarse a trabajar</label>
+                    <p>
+                        <input type="date" id="idInicioTrabajo" />
+                    </p>
+                </td>
+                <td colspan="3">
+                    <label>¿A cuanto ascienden sus gastos mensuales?</label>
+                    <p>
+                        <input type="number" id="idGastosM" style="width: 650px" placeholder="$" />
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h3><label>
+                            <center>Comentarios del entrevistador y firma</center>
+                        </label></h3>
+                    <p>.
+                    </p>
+                    <p>
+                        <center>_______________________________________________________________________________________
+                        </center>
+                    </p>
+                    <p>.
+                    </p>
+                </td>
+                <td colspan="2" rowspan="3">
+                    <label>
+                        <center>Hago constar que mis respuestas son verdaderas</center>
+                    </label>
+                    <p>.
+                    </p>
+                    <p>.
+                    </p>
+                    <p>
+                        <center>_____________________________________</center>
+                    </p>
+                    <p>
+                        <center>Firma del solicitante</center>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
